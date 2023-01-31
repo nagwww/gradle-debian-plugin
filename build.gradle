@@ -14,8 +14,17 @@ debian {
     def baseDir = "src/test/resources/packagename/data"
     dir {
       name = baseDir
+      exclusions = [
+          "etc/init.d/packagename"]
       mapper {
         filename = { path -> "opt/" + path }
+      }
+    }
+    file {
+      name = "${baseDir}/etc/init.d/packagename"
+      target = "etc/init.d/packagename"
+      mapper {
+        fileMode = "755"
       }
     }
     
