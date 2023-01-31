@@ -1,0 +1,35 @@
+plugins {
+  id "de.gesellix.debian" version "2021-04-05T21-19-00"
+}
+
+
+debian {
+  packagename = "packagename"
+  version = "1.0"
+  publications = ['webapp']
+  controlDirectory = "src/test/resources/packagename/control"
+  changelogFile = "src/test/resources/packagename/debian/changelog"
+
+  data {
+    def baseDir = "src/test/resources/packagename/data"
+    dir {
+      name = baseDir
+      exclusions = [
+          "etc/init.d/packagename"]
+      mapper {
+        filename = { path -> "opt/" + path }
+      }
+    }
+    file {
+      name = "${baseDir}/etc/init.d/packagename"
+      target = "etc/init.d/packagename"
+      mapper {
+        fileMode = "755"
+      }
+    }
+    link {
+      path = "/etc/packagename/"
+      name = "var/lib/packagename/conf"
+    }
+  }
+}
