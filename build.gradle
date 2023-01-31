@@ -4,7 +4,7 @@ plugins {
 
 
 debian {
-  packagename = "adobe_test"
+  packagename = "adobe"
   version = "1.0"
   publications = ['webapp']
   controlDirectory = "src/test/resources/packagename/control"
@@ -26,7 +26,7 @@ debian {
       }
     }
     link {
-      path = "/etc/packagename/"
+      path = "/etc/init.d/packagename/"
       name = "var/lib/packagename/conf"
     }
   }
