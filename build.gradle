@@ -4,7 +4,7 @@ plugins {
 
 
 debian {
-  packagename = "packagename"
+  packagename = "packagename_adobe"
   version = "1.0"
   publications = ['webapp']
   controlDirectory = "src/test/resources/packagename/control"
