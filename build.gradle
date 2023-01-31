@@ -18,13 +18,7 @@ debian {
         filename = { path -> "opt/" + path }
       }
     }
-    file {
-      name = "${baseDir}/etc/init.d/packagename"
-      target = "etc/init.d/packagename"
-      mapper {
-        fileMode = "755"
-      }
-    }
+    
     link {
       path = "/etc/init.d/packagename"
       name = "var/lib/packagename/conf"
