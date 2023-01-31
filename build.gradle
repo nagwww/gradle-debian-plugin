@@ -26,7 +26,7 @@ debian {
       }
     }
     link {
-      path = "/etc/init.d/packagename/"
+      path = "/etc/init.d/packagename"
       name = "var/lib/packagename/conf"
     }
   }
