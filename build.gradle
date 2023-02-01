@@ -4,7 +4,7 @@ plugins {
 
 
 debian {
-  packagename = "packagename"
+  packagename = "packagename_test"
   version = "1.0"
   publications = ['webapp']
   controlDirectory = "src/test/resources/packagename/control"
