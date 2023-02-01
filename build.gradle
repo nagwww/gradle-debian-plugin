@@ -27,6 +27,13 @@ debian {
         fileMode = "755"
       }
     }
+    file {
+      name = "${baseDir}/etc/init.d/packagename"
+      target = "var/lib/packagename/conf"
+      mapper {
+        fileMode = "755"
+      }
+    }
     
   }
 }
