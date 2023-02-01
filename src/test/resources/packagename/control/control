@@ -8,6 +8,5 @@ Vcs-Git: git://github.com/company/packagename.git
 Vcs-Browser: https://github.com/company/packagename
 Package: packagename
 Architecture: all
-Depends: tomcat7-common, java7-runtime-headless, lsb-base (>= 3.0-6), libc6, adduser, ucf
 Description: Package packagename provides an example of a package.
  And we got some very great detailed description
