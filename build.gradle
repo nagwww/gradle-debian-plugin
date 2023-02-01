@@ -27,10 +27,6 @@ debian {
         fileMode = "755"
       }
     }
-    link {
-      path = "/etc/init.d/packagename"
-      name = "var/lib/packagename/conf"
-    }
     
   }
 }
