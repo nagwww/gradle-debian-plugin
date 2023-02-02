@@ -5,7 +5,7 @@ plugins {
 
 debian {
   packagename = "packagename"
-  version = "1.0"
+  version = "_1.0"
   publications = ['webapp']
   controlDirectory = "src/test/resources/packagename/control"
   changelogFile = "src/test/resources/packagename/debian/changelog"
